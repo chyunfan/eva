@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build:eva",
+  "outputDirectory": "dist",
+  "routes": [
+    {
+      "src": "^/eva/api/(.*)$",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "^/eva/(.*)$",
+      "dest": "/$1"
+    }
+  ]
+}
