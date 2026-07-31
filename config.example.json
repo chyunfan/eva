@@ -1,0 +1,35 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "deploy": "memory",
+  "supabase": {
+    "comment": "外网 Supabase 的 url / key 不写在此文件！请通过环境变量注入：SUPABASE_URL、SUPABASE_SERVICE_ROLE_KEY（可选回退 SUPABASE_ANON_KEY）。该文件不可被 Web 访问。",
+    "url": "",
+    "serviceRoleKey": ""
+  },
+  "db2": {
+    "host": "10.0.0.1",
+    "port": 50000,
+    "database": "SAMPLE",
+    "username": "db2admin",
+    "password": "YOUR-DB2-PASSWORD",
+    "schema": "EVAL"
+  },
+  "wecom": {
+    "enabled": false,
+    "corpid": "wwYOURCORPID",
+    "corpsecret": "YOUR-CORP-SECRET",
+    "agentid": "1000002",
+    "redirectUri": "https://your-domain.com/auth/callback"
+  },
+  "abilities": [
+    "领导能力",
+    "分析决策",
+    "执行控制",
+    "组织协调",
+    "参谋作用"
+  ],
+  "scoreOptions": [20, 19, 18, 17, 16, 15],
+  "quarter": "2026Q2"
+}
